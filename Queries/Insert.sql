@@ -1,2 +1,8 @@
+-- Insert Strings --
+INSERT INTO MITABLA VALUES('VITYS');
 
-INSERT INTO UNO VALUES(9999,'VITYS','DIRECTOR',7839,to_date('10/01/2022', 'dd/mm/yyyy'),3000,10,10);
+-- Insert Integers --
+INSERT INTO MITABLA VALUES(100);
+
+-- Insert Dates -- 
+INSERT INTO MITABLA VALUES(to_date('10/01/2022', 'dd/mm/yyyy'));
