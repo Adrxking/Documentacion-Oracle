@@ -1,0 +1,2 @@
+
+INSERT INTO UNO VALUES(9999,'VITYS','DIRECTOR',7839,to_date('10/01/2022', 'dd/mm/yyyy'),3000,10,10);
