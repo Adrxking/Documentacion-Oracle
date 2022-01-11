@@ -1,14 +1,18 @@
-# CREATE THE VIEW
+-- VIEW that show all employees with from department 10 and with a salary higuer than 1200 --
 CREATE VIEW UNO AS SELECT * FROM EMPLE WHERE DEPT_NO=10 AND SALARIO>1200;
+
+-- VIEW 
 CREATE VIEW TRES (num_dep, nom_dep, media_salario, maximo_salario) AS 
 SELECT DEPART.dept_no, DEPART.dnombre, avg(salario), max(salario) FROM 
 DEPART, EMPLE WHERE DEPART.dept_no=EMPLE.dept_no GROUP BY DEPART.dept_no, DEPART.dnombre;
 
+-- VIEW that show each concierge from each school centre --
 CREATE VIEW CUATRO (CENTRO, CONSERJE) AS SELECT NOMBRE, APELLIDOS
 FROM CENTROS, PERSONAL WHERE FUNCION = 'CONSERJE'
 AND CENTROS.COD_CENTRO = PERSONAL.COD_CENTRO;
 
-# REMOVE THE VIEW
+-- Remove a VIEW --
+DROP VIEW UNO;
 
-# SELECT THE VIEW 
-SELECT * FROM UNO
+-- Select the VIEW --
+SELECT * FROM UNO;
